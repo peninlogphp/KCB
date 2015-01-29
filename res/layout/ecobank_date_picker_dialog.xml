@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/date_picker_dialog_background"
+android:orientation="vertical"
+android:gravity="center" android:layout_width="fill_parent">
+<LinearLayout
+android:background="@drawable/dialog_inner_bg"
+android:orientation="vertical"
+android:gravity="center" android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_margin="5dp">
+<LinearLayout android:id="@+id/title_layout"
+android:layout_height="wrap_content" 
+android:orientation="horizontal"
+android:gravity="center" android:layout_width="wrap_content">
+<ImageView android:id="@+id/title_icon" android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:src="@drawable/calendar">
+</ImageView>
+<TextView android:id="@+id/title" android:layout_height="wrap_content"
+android:layout_width="wrap_content" 
+android:textColor="#ff000000"
+android:textStyle="bold"
+android:textSize="18dp"
+			android:layout_gravity="center">
+</TextView>
+</LinearLayout>
+
+<TextView android:id="@+id/message" android:layout_height="wrap_content"
+android:layout_width="wrap_content" 
+android:textColor="#000"
+android:textStyle="normal"
+android:textSize="16dp"
+			android:layout_gravity="center">
+</TextView>
+
+<LinearLayout 
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:orientation="horizontal"
+android:gravity="center" 
+android:layout_marginRight="2dp"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginBottom="2dp">
+
+    <LinearLayout 
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:orientation="vertical"
+android:gravity="center" 
+android:background="@drawable/date_picker_border"
+android:layout_marginRight="2dp"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginBottom="2dp"
+                       android:padding="4dp"
+                       >
+
+          <Button
+    	 android:id="@+id/day_of_month_forward"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+android:text="+"
+                                    style="@style/time_picker_button_text"
+                               android:background="@drawable/time_picker_fwd"
+       		    android:gravity="center"
+               		    android:layout_gravity="center"
+        />
+        
+           <EditText 
+        android:id="@+id/day_of_month_field"  
+        android:layout_width="60dp" 
+        android:layout_height="40dp"  
+        		    android:layout_gravity="center"   
+                                            style="@style/edittext_stanchart"
+        />	
+        
+        <Button
+    	 android:id="@+id/day_of_month_backward"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+   android:text="-"
+                                    style="@style/time_picker_button_text"
+                               android:background="@drawable/time_picker_bwd"
+       		    android:gravity="center"
+               		    android:layout_gravity="left|center"
+        />
+          
+            </LinearLayout>
+            
+        <LinearLayout 
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:orientation="vertical"
+android:gravity="center" 
+android:background="@drawable/date_picker_border"
+android:layout_marginRight="2dp"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginBottom="2dp"
+                    android:padding="4dp"
+                       >
+
+          <Button
+    	 android:id="@+id/month_forward"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+                          android:text="+"
+                                    style="@style/time_picker_button_text"
+                               android:background="@drawable/time_picker_fwd"
+       		    android:gravity="center"
+               		    android:layout_gravity="left|center"
+        />
+        
+           <EditText 
+        android:id="@+id/month_field"  
+        android:layout_width="60dp" 
+        android:layout_height="40dp"  
+        		    android:layout_gravity="center"   
+                                                   style="@style/edittext_stanchart"
+        />	
+        
+        <Button
+    	 android:id="@+id/month_backward"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+android:text="-"
+                                    style="@style/time_picker_button_text"
+                               android:background="@drawable/time_picker_bwd"
+       		    android:gravity="center"
+               		    android:layout_gravity="left|center"
+        />
+          
+            </LinearLayout>
+            
+            <LinearLayout 
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:orientation="vertical"
+android:gravity="center" 
+android:background="@drawable/date_picker_border"
+android:layout_marginRight="2dp"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginBottom="2dp"
+                                              android:padding="4dp"
+                       >
+
+          <Button
+    	 android:id="@+id/year_forward"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+         android:text="+"
+                                    style="@style/time_picker_button_text"
+                               android:background="@drawable/time_picker_fwd"
+       		    android:gravity="center"
+               		    android:layout_gravity="left|center"
+        />
+        
+           <EditText 
+        android:id="@+id/year_field"  
+        android:layout_width="70dp" 
+        android:layout_height="40dp"  
+        		    android:layout_gravity="center"   
+                                                   style="@style/edittext_stanchart"
+        />	
+        
+        <Button
+    	 android:id="@+id/year_backward"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+android:text="-"
+                                    style="@style/time_picker_button_text"
+                               android:background="@drawable/time_picker_bwd"
+       		    android:gravity="center"
+               		    android:layout_gravity="left|center"
+        />
+          
+            </LinearLayout>
+
+            </LinearLayout>
+		
+<LinearLayout android:id="@+id/button_layout"
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:orientation="horizontal"
+android:gravity="center" 
+android:layout_marginRight="10dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginBottom="10dp">
+<Button android:layout_width="75dp"
+android:layout_height="36dp" android:text="Set" 
+android:id="@+id/ok_button"
+        android:background="@drawable/ecobank_button"
+        style="@style/lipuka_button"
+                android:layout_marginRight="10dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        ></Button>
+        <Button android:layout_width="75dp"
+android:layout_height="36dp" android:text="Cancel" 
+android:id="@+id/cancel_button"
+        android:background="@drawable/ecobank_button"
+        style="@style/lipuka_button"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        ></Button>
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

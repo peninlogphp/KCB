@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/moneygram_send_money_recipient"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Mobile Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/mobile_number_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />
+                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+   		   				android:layout_marginTop="2dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Full Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/name_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                       <include layout="@layout/list_divider" />
+      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Destination Country"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <AutoCompleteTextView 
+        android:id="@+id/country_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                               <include layout="@layout/list_divider" />   
+          <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Amount"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+ <EditText 
+        android:id="@+id/send_money_recipient_amount_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />  
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Currency"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/recipient_currency_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />
+ 	                  
+              <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ 
+      <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Charge"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+     
+
+   <TextView android:id="@+id/recipient_charge"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="40.00"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+          </LinearLayout>	
+          
+                       <include layout="@layout/list_divider" />  	
+      	<Button
+	android:id="@+id/send_money_recipient_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Send Now"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+            
+         </LinearLayout>
+		

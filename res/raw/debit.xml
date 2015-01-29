@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<servicexml>
+
+<activity id="main" type="list" title="Main">
+<list type="normal" source="">
+  <item value="balance">Balance</item>
+  <item value="ministmt">Mini Statement</item>
+     <item value="topup">Buy air time</item>
+    <item value="mpesatransfer">Transfer to Mpesa</item>
+</list>
+<navigate activity="" label="Next"></navigate>
+</activity>
+  
+	<activity id="balance" type="default" title="Balance Enquiry">
+<edittext id="PIN" lines="1" length="4" required="true" type="password" label="Enter PIN">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/balance.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+
+ <activity id="ministmt" type="default" title="Mini Statement">
+<edittext id="PIN" lines="1" length="4" required="true" type="password" label="Enter PIN">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/ministmt.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+
+<activity id="topup" type="list" title="Topup">
+<list type="other" source="contacts">
+  <item value="own">Own Number</item>
+<item value="networks">Other</item>
+</list>
+<navigate activity="topupamt" label="Next"></navigate>
+</activity>
+
+<activity id="networks" type="list" title="Choose Network">
+<list type="normal" source="">
+  <item value="safaricom">Safaricom</item>
+  <item value="yu">Yu</item>
+     <item value="airtel">Airtel</item>
+  <item value="orange">Orange</item>
+</list>
+<navigate activity="topupdest" label="Next"></navigate>
+</activity>
+
+<activity id="topupdest" type="default" title="Topup">
+<edittext id="phoneno" lines="1" length="30" required="true" type="phone" label="Enter Phone No.">
+</edittext>
+<navigate activity="topupamt" label="Next"></navigate>
+</activity>
+
+<activity id="topupamt" type="default" title="Amount">
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Ammount">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/topup.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+<activity id="mpesatransfer" type="list" title="Transfer to Mpesa">
+<list type="other" source="contacts">
+      <item value="own">Own Number</item>
+<item value="mpesafundsdest">Other</item>
+</list>
+<navigate activity="mpesaamt" label="Next"></navigate>
+</activity>
+
+<activity id="mpesafundsdest" type="default" title="Mpesa Transfer Recipient">
+<edittext id="phoneno" lines="1" length="30" required="true" type="phone" label="Enter Phone No.">
+</edittext>
+<navigate activity="mpesaamt" label="Next"></navigate>
+</activity>
+
+<activity id="mpesaamt" type="default" title="Mpesa Amount">
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Ammount">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/mpesaft.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+</servicexml>

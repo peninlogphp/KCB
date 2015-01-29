@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"            
+ >
+                                 <LinearLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"            
+ >
+                                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/date_n_time"  
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+  <TextView
+				        android:id="@+id/amount"  
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+          </LinearLayout>
+                                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/mtcn"  
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+  <TextView
+				        android:id="@+id/status"  
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+          </LinearLayout>
+                                          	
+<LinearLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"             
+                		    android:gravity="center"
+ >
+ <Button
+    	 android:id="@+id/edit"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+                          android:text="Edit"
+                     android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+                                      android:layout_marginLeft="3dp"
+                   android:layout_marginRight="10dp"
+       		                      android:layout_marginTop="5dp"
+       		              		       android:layout_marginBottom="5dp"
+       		    android:gravity="left|top"
+       		           		        android:drawableLeft="@drawable/edit_transaction"
+        />
+        
+ <Button
+    	 android:id="@+id/cancel"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+                android:text="Cancel"
+       android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="3dp"
+       		       android:layout_marginTop="5dp"
+       		              		       android:layout_marginBottom="5dp"
+       		    android:gravity="left|top"
+       		        android:drawableLeft="@drawable/cancel_transaction"
+        />
+           
+  
+</LinearLayout> 
+          </LinearLayout>
+          
+  <Button
+    	 android:id="@+id/more"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+                               android:background="#00000000"
+       		           		        android:drawableLeft="@drawable/rounded_next_btn"
+       	              		    android:gravity="left|center"
+        android:textStyle="normal"
+        		style="@style/lipuka_button" 
+        	       	              		    android:layout_gravity="center"
+        		/>
+           </LinearLayout>
+ 
+
+
+	</LinearLayout>

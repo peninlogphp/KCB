@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:greendroid="http://schemas.android.com/apk/res/kcb.android"
+ android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layer_background"
+    >
+ 
+	   <LinearLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:orientation="vertical"            
+ 		    android:layout_gravity="center"             
+ >
+  
+			      <include layout="@layout/ecobank_action_bar" />
+			      		       
+				           <FrameLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     		    android:layout_gravity="center"             
+    >              <RelativeLayout
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ 		    android:layout_gravity="center"             
+>   
+
+    <ImageView
+  android:layout_width="160dp"
+  android:layout_height="155dp"  
+			        android:layout_centerInParent="true"
+  android:src="@drawable/center_logo"
+  android:visibility="gone"
+  />
+  	 
+                  <android.opengl.GLSurfaceView android:id="@+id/glView"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:gravity="center"
+			        android:layout_centerInParent="true"
+/>
+                    
+  
+      
+
+	            	    		         	<Button
+	android:id="@+id/sign_in_button"
+        android:layout_width="82dp"
+        android:layout_height="27dp"
+        android:textStyle="normal"
+        android:background="@drawable/sign_in_button_bg"
+        		style="@style/lipuka_button"
+        		android:layout_alignParentLeft="true"
+					        android:layout_alignParentBottom="true"
+	 android:layout_marginBottom="4dp"
+	 android:layout_marginLeft="5dp"
+	  />  
+        		
+	
+	            	    		         	<Button
+android:id="@+id/sign_up_button"
+        android:layout_width="82dp"
+        android:layout_height="27dp"
+        android:textStyle="normal"
+        android:background="@drawable/sign_up_button_bg"
+        		style="@style/lipuka_button"
+        		android:layout_alignParentRight="true"
+					        android:layout_alignParentBottom="true"
+	 android:layout_marginBottom="4dp" 
+	 android:layout_marginRight="5dp"/>  
+
+
+	
+	
+  
+                </RelativeLayout>
+	
+             
+             <RelativeLayout
+    android:id="@+id/help_layout"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+>   
+ <WebView  
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    android:background="@drawable/help_background"
+/>
+
+ <ImageButton
+    	 android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:background="#00000000"
+        android:src="@drawable/fileclose"
+         android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+             
+	 			   			  	 		        </FrameLayout>
+    </LinearLayout> 
+    </FrameLayout>

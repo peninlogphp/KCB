@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ 			       	        android:id="@+id/product_info_layout"
+        android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical">
+ <LinearLayout 
+        android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+  android:layout_marginTop="0dp"
+   android:layout_marginBottom="5dp"
+ >
+     
+<LinearLayout 
+     	 android:id="@+id/header"
+        android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+     android:background="@drawable/section_header"
+ 	         		   				android:layout_margin="0dp" >
+ 
+   <Button
+    	 android:id="@+id/show_or_hide_select_bill"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+                          android:text=""
+                                    style="@style/song_button_text"
+                               android:background="#00000000"
+       		    android:gravity="left|center"
+       		           		        android:drawableLeft="@drawable/show"
+               		    android:layout_gravity="left|center"
+             		     		   				android:layout_marginRight="1dp"
+               		    
+        />
+      <TextView
+		android:id="@+id/select_bill_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:text="Select Bill"
+		android:gravity="center" 
+		style="@style/subtitle_text"
+		/>
+
+</LinearLayout>
+
+  <LinearLayout 
+     	  android:id="@+id/section_divider"
+	        android:layout_width="fill_parent"
+	        android:layout_height="3dp"
+      android:background="@drawable/section_divider"
+ 	         		   				android:layout_margin="0dp">
+ </LinearLayout>
+      
+ <LinearLayout 
+     	 android:id="@+id/select_bill_body"
+        android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+ android:layout_marginLeft="0dp"
+      android:background="@drawable/section_body"
+ 	         		   				android:layout_margin="0dp"
+       android:visibility="gone"
+ >
+ 
+		       	       
+      			      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+  <TextView
+		android:id="@+id/select_bill_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Select Bill:"
+		android:gravity="left" 
+		style="@style/label_text"
+		/>
+   <RadioGroup
+              android:id="@+id/accounts_list"  
+      android:layout_width="160dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+          </RadioGroup>
+          </LinearLayout> 
+      <TextView
+		android:id="@+id/no_accounts_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:text="No named bills were found"
+		android:gravity="left" 
+		android:layout_gravity="left"             
+		style="@style/label_text"
+		    android:visibility="gone"
+		/>    
+	   
+	                                      <include layout="@layout/list_divider" />
+	                                      
+	      		               <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/select_bill_amount_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Amount"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/select_bill_amount_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+        <include layout="@layout/list_divider" />
+	      		               
+                    <Button
+	android:id="@+id/select_bill_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Submit"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+            	    android:layout_marginBottom="5dp"          
+        		/>
+     
+</LinearLayout>
+      </LinearLayout>
+      
+</LinearLayout>

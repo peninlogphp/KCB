@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/moneygram_send_money"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+           android:layout_gravity="center"
+            >     		       
+     	           	                  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ 		     android:layout_marginTop="3dp"
+ >
+ <TextView
+		android:id="@+id/source_account_label"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Source Account"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+ <Spinner 
+        android:id="@+id/source_account_spinner"
+        android:layout_width="150dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+            android:textSize="16dp"
+              android:background="@drawable/slim_spinner_normal"       
+    />
+          </LinearLayout>
+                                                     <include layout="@layout/list_divider" />
+     	           	                  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal" 
+  android:layout_gravity="center"
+  	         		   				android:layout_marginTop="2dp"
+  	         		   				android:layout_marginBottom="0dp"
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp">
+<TextView
+		android:id="@+id/recipient_text"
+		android:layout_width="148dp"
+		android:layout_height="36dp"
+		android:gravity="center" 
+		  android:layout_gravity="center"
+		style="@style/tab_title_text"
+		android:layout_marginBottom="0dp"
+		android:text="Enter Recipient" 		
+    android:background="@drawable/tab_selected"
+		/>
+<TextView
+		android:id="@+id/beneficiaries_text"
+		android:layout_width="148dp"
+		android:layout_height="36dp"
+		android:gravity="center" 
+		  android:layout_gravity="center"
+		style="@style/tab_title_text"
+		android:layout_marginBottom="0dp"
+		android:text="Beneficiaries" 		
+    android:background="@drawable/tab_unselected"		
+		/>
+                  </LinearLayout> 
+   <lipuka.android.view.SafeViewFlipper android:id="@+id/send_money_flipper"
+android:layout_width="296dp" android:layout_height="fill_parent"
+		     android:paddingRight="5dp"
+		     		     android:paddingLeft="5dp"
+		     		     android:paddingBottom="20dp"
+		     		     
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp"		   				
+  	         		   				android:layout_marginBottom="1dp"
+       android:background="@drawable/tab_content"
+  android:layout_gravity="center"
+		     
+>
+<!--adding views to ViewFlipper-->
+       <include layout="@layout/moneygram_send_money_recipient" />
+    <include layout="@layout/moneygram_send_money_beneficiaries" />
+      
+            </lipuka.android.view.SafeViewFlipper>  
+            
+        
+            
+         </LinearLayout>
+		

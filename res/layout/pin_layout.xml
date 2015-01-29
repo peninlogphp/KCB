@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:background="@drawable/layer_background">
+    <TextView
+        android:id="@+id/pin_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_prompt"
+         android:gravity="left" 
+        android:layout_centerHorizontal="true"
+        		style="@style/lipuka_text_view"/>
+     
+        
+    <EditText
+        android:id="@+id/pin_field"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pin_prompt"/>
+    <Button
+        android:id="@+id/pin_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pin_field"
+        android:gravity="center_vertical|center_horizontal" 
+        android:layout_centerHorizontal="true"
+                 android:textStyle="bold"
+        android:background="@drawable/lipuka_button"
+        		style="@style/lipuka_button"
+        android:text="@string/pin_submit" />
+    
+     <ImageView
+	        android:id="@+id/center_bg"
+	        android:layout_centerInParent="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/center_bg" />
+     
+</RelativeLayout>

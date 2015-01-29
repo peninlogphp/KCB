@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+			   <LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/edit_card"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ android:orientation="vertical"            
+             android:visibility="gone"
+ >
+ 	
+                	      <LinearLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+        android:text="Card Alias"
+		android:gravity="left|center" 
+		style="@style/small_title_text"
+		/>
+
+ <TextView
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+        android:text="Card Number"
+		android:gravity="left|center" 
+		style="@style/small_title_text"
+		/>
+  
+          </LinearLayout>  
+                                                  <include layout="@layout/list_divider" />
+                	      
+        <ListView android:id="@+id/lipuka_list_view" 
+  android:layout_height="wrap_content"
+android:layout_width="300dp"
+	android:gravity="center"
+	 android:listSelector="@drawable/my_account_list_selector"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+                                    style="@style/ecobank_list_view"
+>
+</ListView>	           		
+	    </LinearLayout> 
+				           		

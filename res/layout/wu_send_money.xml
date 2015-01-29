@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+			   <LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wu_layer_background"
+ android:orientation="vertical"            
+ >
+ 	 <include layout="@layout/wu_action_bar" />
+			      <include layout="@layout/wu_title_bar" />
+			      					      		       
+				           <FrameLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   		    android:layout_gravity="center"             
+    >
+
+ 
+  <ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		     android:background="@drawable/main_content_bg"
+		     android:layout_margin="2dp"
+		  android:layout_gravity="center"
+		> 
+	    	   <LinearLayout 
+ android:layout_width="300dp"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"            
+ 		     android:layout_marginRight="3dp"
+ 		     android:layout_marginLeft="3dp"
+ >     
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ 		     android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:id="@+id/source_account_label"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Source Account"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+ <Spinner 
+        android:id="@+id/source_account_spinner"
+        android:layout_width="150dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+            android:textSize="16dp"
+              android:background="@drawable/slim_spinner_normal"       
+    />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />
+      
+                 <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ 		     android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Account Balance:"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+  <TextView
+	    android:id="@+id/account_balance"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text=""
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />
+              <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal" 
+  android:layout_gravity="center"
+  	         		   				android:layout_marginTop="2dp"
+  	         		   				android:layout_marginBottom="0dp"
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp">
+<TextView
+		android:id="@+id/new_recipient_text"
+		android:layout_width="148dp"
+		android:layout_height="36dp"
+		android:gravity="center" 
+		  android:layout_gravity="center"
+		style="@style/wu_tab_title_text"
+		android:layout_marginBottom="0dp"
+		android:text="New Recipient" 		
+    android:background="@drawable/wu_tab_selected"
+		/>
+<TextView
+		android:id="@+id/saved_recipient_text"
+		android:layout_width="148dp"
+		android:layout_height="36dp"
+		android:gravity="center" 
+		  android:layout_gravity="center"
+		style="@style/tab_title_text"
+		android:layout_marginBottom="0dp"
+		android:text="Saved Recipient" 		
+    android:background="@drawable/wu_tab_unselected"		
+		/>
+                  </LinearLayout> 
+   <lipuka.android.view.SafeViewFlipper android:id="@+id/flipper"
+android:layout_width="296dp" android:layout_height="fill_parent"
+		     android:paddingRight="5dp"
+		     		     android:paddingLeft="5dp"
+		     		     android:paddingBottom="20dp"
+		     		     
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp"		   				
+  	         		   				android:layout_marginBottom="1dp"
+       android:background="@drawable/tab_content"
+  android:layout_gravity="center"
+		     
+>
+<!--adding views to ViewFlipper-->
+       <include layout="@layout/wu_send_money_new" />
+    <include layout="@layout/wu_send_money_saved" />
+      
+            </lipuka.android.view.SafeViewFlipper>           		
+	    </LinearLayout> 
+				           		</ScrollView>
+	
+    
+
+ 			   			    				    		 <RelativeLayout
+    android:id="@+id/help_layout"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+>   
+ <WebView  
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    android:background="@drawable/help_background"
+/>
+
+ <ImageButton
+    	 android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:background="#00000000"
+        android:src="@drawable/fileclose"
+         android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    </FrameLayout>
+ 			   			    				    		 
+        </LinearLayout> 
+ 			   

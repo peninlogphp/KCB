@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/to_another_person"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+           android:layout_gravity="center"
+            >     		       
+       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+  		     android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Source Account"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ 
+<Spinner 
+        android:id="@+id/to_another_person_source_account_spinner"
+        android:layout_width="150dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+            android:textSize="16dp"
+              android:background="@drawable/slim_spinner_normal"       
+    />
+
+          </LinearLayout>
+          
+      		                                          <include layout="@layout/list_divider" />     
+       	                 	               <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal" 
+  android:layout_gravity="center"
+  	         		   				android:layout_marginTop="2dp"
+  	         		   				android:layout_marginBottom="0dp"
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp">
+<TextView
+		android:id="@+id/phone_number_text"
+		android:layout_width="148dp"
+		android:layout_height="36dp"
+		android:gravity="center" 
+		  android:layout_gravity="center"
+		style="@style/tab_title_text"
+		android:layout_marginBottom="0dp"
+		android:text="To Mobile No." 		
+    android:background="@drawable/tab_selected"
+		/>
+<TextView
+		android:id="@+id/card_number_text"
+		android:layout_width="148dp"
+		android:layout_height="36dp"
+		android:gravity="center" 
+		  android:layout_gravity="center"
+		style="@style/tab_title_text"
+		android:layout_marginBottom="0dp"
+		android:text="To Card Number" 		
+    android:background="@drawable/tab_unselected"		
+		/>
+                  </LinearLayout> 
+   <lipuka.android.view.SafeViewFlipper android:id="@+id/flipper"
+android:layout_width="296dp" android:layout_height="fill_parent"
+		     android:paddingRight="5dp"
+		     		     android:paddingLeft="5dp"
+		     		     android:paddingBottom="20dp"
+		     		     
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp"		   				
+  	         		   				android:layout_marginBottom="1dp"
+       android:background="@drawable/tab_content"
+  android:layout_gravity="center"
+		     
+>
+<!--adding views to ViewFlipper-->
+       <include layout="@layout/funds_transfer_phone_number" />
+    <include layout="@layout/funds_transfer_card_number" />
+      
+            </lipuka.android.view.SafeViewFlipper>  
+            
+        
+            
+         </LinearLayout>
+		

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:greendroid="http://schemas.android.com/apk/res/kcb.android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:padding="8dp">
+
+	<greendroid.widget.AsyncImageView
+		android:id="@+id/async_image"
+		android:layout_width="24dp"
+		android:layout_height="24dp"
+		greendroid:defaultSrc="@drawable/listitem" />
+
+	<TextView
+		android:id="@+id/text"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:paddingLeft="10dp"
+		android:gravity="center_vertical|left" 
+	    android:textColor="@color/list_item_text" 
+		/>
+
+</LinearLayout>

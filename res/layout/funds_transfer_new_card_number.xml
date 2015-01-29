@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/funds_transfer_new_card_number"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Destination Card Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/new_card_destination_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />
+               
+         
+                 
+                                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Amount (KES)"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+ <EditText 
+        android:id="@+id/new_card_number_amount_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />
+          	                  
+ 	<LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+                               android:visibility="gone"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Source of Funds"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/new_card_source_of_funds_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" 
+                                            android:visibility="gone"
+                             />
+                         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+                            android:visibility="gone"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Purpose of Funds"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/new_card_purpose_of_funds_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" 
+                            android:visibility="gone"
+                             />	
+                                      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+       <TextView
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+        android:text="Save Recipient"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+     
+     <CheckBox android:id="@+id/new_card_number_save"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+                android:layout_marginRight="3dp"       
+        />
+ <EditText 
+        android:id="@+id/new_card_number_alias_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+               android:hint="Recipient Alias"
+        />
+          </LinearLayout>	
+          
+                       <include layout="@layout/list_divider" />  	
+      	<Button
+	android:id="@+id/new_card_number_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Send Now"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+            
+         </LinearLayout>
+		

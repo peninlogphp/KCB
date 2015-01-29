@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    
+     <EditTextPreference android:title=""
+    android:summary="" android:key="activated"></EditTextPreference>
+    
+        <EditTextPreference android:title=""
+    android:summary="" android:key="number"></EditTextPreference>
+    
+         <EditTextPreference android:title=""
+    android:summary="" android:key="otp"></EditTextPreference>
+    
+</PreferenceScreen>

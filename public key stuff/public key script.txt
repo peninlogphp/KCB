@@ -1,0 +1,19 @@
+:::python
+import os
+os.system("openssl x509 -noout -fingerprint -text < host.cert > host.info")
+info = open("host.info").read().split('\n')
+reading_modulus = False
+modulus_parts = "0x"
+for line in info:
+    if line.strip().startswith("Modulus"):
+        reading_modulus = True
+    elif line.strip().startswith("Exponent"):
+        exponent = line.strip().split(' ')[1]
+        reading_modulus = False
+    elif reading_modulus:
+        modulus_parts += line.strip().replace(':', '')
+
+print exponent
+print int(modulus_parts, 16)
+
+$ python extract_modulus_and_exponent.py > rsa_public_key.res

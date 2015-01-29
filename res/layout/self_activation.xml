@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layer_background"
+    >
+    
+     			<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		>
+		   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+ 		   				android:layout_marginTop="0dp"
+		    android:layout_gravity="center_horizontal"             
+ >
+                  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/accountno_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Account Number"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/accountno_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+          <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/id_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="ID Number"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/id_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/id_type_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="ID Type"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/id_type_spinner"
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center"
+    />
+
+          </LinearLayout>
+          
+                    <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/transaction_amount_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Last Transaction Amount"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/transaction_amount_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+ 
+                               <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/transaction_date_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Last Transaction Date"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/transaction_date_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+                                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/surname_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Surname"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/surname_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+                                    <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/middlename_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Middle Name"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/middlename_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+                                       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/firstname_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="First Name"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/firstname_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+                                        <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/mobileno_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Mobile Number"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/mobileno_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/dateOfBirth_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Date Of Birth"
+		android:gravity="center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/dateOfBirth_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+	
+             	<Button
+	android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Register"
+        android:textStyle="bold"
+        android:background="@drawable/lipuka_button"
+        		style="@style/lipuka_button"
+        		android:layout_marginBottom="10dp"
+        		/>
+	</LinearLayout> 
+			</ScrollView>
+		       
+    	 
+<RelativeLayout
+    android:id="@+id/help_layout"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+>   
+ <WebView  
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    android:background="@drawable/help_background"
+/>
+
+ <ImageButton
+    	 android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:background="#00000000"
+        android:src="@drawable/fileclose"
+         android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+</FrameLayout>

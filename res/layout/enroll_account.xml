@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/enroll_account"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+         	        	 	        android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="First Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/fname_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />
+                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+   		   				android:layout_marginTop="2dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Middle Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/mname_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                       <include layout="@layout/list_divider" />
+      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Last Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/lname_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                               <include layout="@layout/list_divider" />   
+	  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Account Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/account_number_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                               <include layout="@layout/list_divider" /> 
+               <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Date Of Birth"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/date_of_birth_field"  
+        android:layout_width="104dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+      <Button
+    	 android:id="@+id/date_of_birth_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+                          android:text=""
+                                    style="@style/song_button_text"
+                               android:background="#00000000"
+       		    android:gravity="left|center"
+       		           		        android:drawableTop="@drawable/calendar"
+        		    android:layout_gravity="center"       
+	        />
+          </LinearLayout>  
+            <include layout="@layout/list_divider" />                       
+                                 <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="ID Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/id_number_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                               <include layout="@layout/list_divider" /> 
+                               
+                                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+  <CheckBox android:id="@+id/accept_terms_account"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+        />
+                                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+		    android:layout_gravity="center"             
+ >
+ 
+ <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:text="I have read and agree with the"
+		android:gravity="left|center" 
+		style="@style/label_text"
+			android:padding="1dp" 
+		/>
+         <TextView
+		android:id="@+id/terms_link_account"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		android:padding="1dp" 
+		/> 
+ 
+          </LinearLayout>	
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />
+                         
+                               	  	<Button
+	android:id="@+id/submit_account"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Sign Up"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+   	        		                	        android:layout_marginBottom="5dp"
+        		/>		       
+            
+         </LinearLayout>
+		

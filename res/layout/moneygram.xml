@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+			   <LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layer_background"
+ android:orientation="vertical"            
+ >
+ 	 <include layout="@layout/ecobank_action_bar" />
+			      <include layout="@layout/cfc_title_bar" />
+			      					      		       
+				           <FrameLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   		    android:layout_gravity="center"             
+    >
+
+ 
+  <ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		     android:background="@drawable/main_content_bg"
+		     android:layout_margin="2dp"
+		> 
+	    	   <LinearLayout 
+ android:layout_width="300dp"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"            
+ 		     android:layout_marginRight="3dp"
+ 		     android:layout_marginLeft="3dp"
+ >       
+                                       <include layout="@layout/list_divider" />
+       <include layout="@layout/moneygram_send_money_title_bar" />
+                                        <include layout="@layout/list_divider" />
+       <include layout="@layout/moneygram_send_money" />
+                                       		      	   			  	 		        
+				           <include layout="@layout/moneygram_receive_money_title_bar" />
+				                                                 <include layout="@layout/list_divider" />
+				           <include layout="@layout/moneygram_receive_money" />
+				           
+				            <include layout="@layout/moneygram_beneficiaries_title_bar" />
+				                                                 <include layout="@layout/list_divider" />
+				           <include layout="@layout/moneygram_beneficiaries" />
+				           		
+	    </LinearLayout> 
+				           		</ScrollView>
+	
+    
+
+ 			   			    				    		 <RelativeLayout
+    android:id="@+id/help_layout"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+>   
+ <WebView  
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    android:background="@drawable/help_background"
+/>
+
+ <ImageButton
+    	 android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:background="#00000000"
+        android:src="@drawable/fileclose"
+         android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    </FrameLayout>
+ 			   			    				    		 
+        </LinearLayout> 
+ 			   

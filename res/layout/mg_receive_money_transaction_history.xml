@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+			   <LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/receive_money_transaction_history"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ android:orientation="vertical"            
+             android:visibility="gone"
+ >
+ 	
+                	                  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ 		     android:layout_marginTop="3dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Sender Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+<EditText 
+        android:id="@+id/sender_name_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+                                   <include layout="@layout/list_divider" />
+                                    <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Start Date"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/receive_money_start_date_field"  
+        android:layout_width="114dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+      <Button
+    	 android:id="@+id/receive_money_start_date_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+                          android:text=""
+                                    style="@style/song_button_text"
+                               android:background="#00000000"
+       		    android:gravity="left|center"
+       		           		        android:drawableTop="@drawable/calendar"
+        		    android:layout_gravity="center"       
+	        />
+          </LinearLayout>
+          
+                                              <include layout="@layout/list_divider" />
+		       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+  <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="End Date"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+     android:id="@+id/receive_money_end_date_field"  
+        android:layout_width="114dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+       <Button
+    	 android:id="@+id/receive_money_end_date_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+                          android:text=""
+                                    style="@style/song_button_text"
+                               android:background="#00000000"
+       		    android:gravity="left|center"
+       		           		        android:drawableTop="@drawable/calendar"
+        		    android:layout_gravity="center"       
+	        />
+          </LinearLayout>
+
+                                 <include layout="@layout/list_divider" /> 
+                  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ 		     android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Country"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+  <AutoCompleteTextView 
+        android:id="@+id/receive_money_country_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+   
+          </LinearLayout>
+                                        <include layout="@layout/list_divider" />
+            
+		  	<Button
+	android:id="@+id/receive_money_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Find Transaction"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        			                	        android:layout_marginBottom="5dp"
+        		/>		           		
+	    </LinearLayout> 
+				           		

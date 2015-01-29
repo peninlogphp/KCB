@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/insurance_renew_cover"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+       		
+                                      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Select Provider"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/renew_cover_provider_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />
+       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Select Product"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/renew_cover_product_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />  
+                      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ 
+      <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Current Cover Option:"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+     
+
+   <TextView android:id="@+id/current_cover_option"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Third Party Fire and Theft"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+          </LinearLayout>	
+          
+                       <include layout="@layout/list_divider" />  
+                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ 
+      <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Expiry Date:"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+     
+
+   <TextView android:id="@+id/expiry_date"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="June 30, 2013"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+          </LinearLayout>	
+          
+                       <include layout="@layout/list_divider" />                                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Renew Cover Option to"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/renew_cover_cover_options_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />  
+                                   
+                                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Select Period"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/renew_cover_period_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" /> 
+               
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Allow Direct Debit"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <CheckBox android:id="@+id/renew_cover_allow_direct_debit"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+        />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />
+ 	                  
+               	
+      	<Button
+	android:id="@+id/renew_cover_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Submit"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+            
+         </LinearLayout>
+		

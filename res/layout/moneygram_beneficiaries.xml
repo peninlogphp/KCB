@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/moneygram_beneficiaries"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+           android:layout_gravity="center"
+            >     		       
+     	           	      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical" 
+  android:layout_gravity="left|center"
+  	         		   				android:layout_marginTop="2dp"
+  	         		   				android:layout_marginBottom="0dp"
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp"
+ 		   				>
+          <Button
+    	 android:id="@+id/add_beneficiary"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+                          android:text="Add Beneficiary"
+                               android:background="#00000000"
+       		           		        android:drawableLeft="@drawable/add_beneficiary"
+       	              		    android:gravity="left|center"
+        android:textStyle="normal"
+        		style="@style/lipuka_button"
+        		android:layout_marginBottom="5dp"
+        		 android:textColor="#ff000000"
+        		 />
+  <Button
+    	 android:id="@+id/edit_beneficiary"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+                          android:text="Edit Beneficiaries"
+                               android:background="#00000000"
+       		           		        android:drawableLeft="@drawable/edit_beneficiary"
+       	              		    android:gravity="left|center"
+        android:textStyle="normal"
+        		style="@style/lipuka_button" 
+        		                               android:textColor="#ff000000"
+        		/>
+  
+                  </LinearLayout> 
+        
+            
+         </LinearLayout>
+		

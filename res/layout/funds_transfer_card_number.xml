@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+			   <LinearLayout  android:id="@+id/funds_transfer_card_number"
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+ android:orientation="vertical"            
+ >
+       <include layout="@layout/funds_transfer_card_number_saved_title_bar" />
+                                        <include layout="@layout/list_divider" />
+       <include layout="@layout/funds_transfer_saved_card_number" />
+                                       		      	   			  	 		        
+				           <include layout="@layout/funds_transfer_card_number_new_title_bar" />
+				                                             <include layout="@layout/list_divider" />
+				           <include layout="@layout/funds_transfer_new_card_number" />
+				           
+			    		
+ 			   			    				    		 
+        </LinearLayout> 
+ 			   

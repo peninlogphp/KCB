@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ 			       	        android:id="@+id/product_info_layout"
+        android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical">
+ <LinearLayout 
+        android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+  android:layout_marginTop="5dp"
+   android:layout_marginBottom="5dp"
+ >
+     
+<LinearLayout 
+     	 android:id="@+id/header"
+        android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+     android:background="@drawable/section_header"
+ 	         		   				android:layout_margin="0dp" >
+ 
+   <Button
+    	 android:id="@+id/show_or_hide_enter_account"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+                          android:text=""
+                                    style="@style/song_button_text"
+                               android:background="#00000000"
+       		    android:gravity="left|center"
+       		           		        android:drawableLeft="@drawable/show"
+               		    android:layout_gravity="left|center"
+             		     		   				android:layout_marginRight="1dp"
+               		    
+        />
+      <TextView
+		android:id="@+id/enter_account_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:text="Specify Account Number"
+		android:gravity="center" 
+		style="@style/subtitle_text"
+		/>
+
+</LinearLayout>
+
+  <LinearLayout 
+     	  android:id="@+id/section_divider"
+	        android:layout_width="fill_parent"
+	        android:layout_height="3dp"
+      android:background="@drawable/section_divider"
+ 	         		   				android:layout_margin="0dp">
+ </LinearLayout>
+      
+ <LinearLayout 
+     	 android:id="@+id/enter_account_body"
+        android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+ android:layout_marginLeft="0dp"
+      android:background="@drawable/section_body"
+ 	         		   				android:layout_margin="0dp"
+      android:visibility="gone"
+ >
+ 
+           		               <LinearLayout 
+      		            android:id="@+id/merchants_linear_layout"       		                   
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="left"             
+ >
+ <TextView
+		android:id="@+id/select_merchant_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Select Merchant:"
+		android:gravity="left" 
+		style="@style/label_text"
+		/>
+   <RadioGroup
+              android:id="@+id/merchants_layout"  
+      android:layout_width="160dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <RadioButton android:id="@+id/kplc"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"       
+          android:text="KPLC" 
+                  		style="@style/list_radio_button"
+          android:button="@drawable/radio_button_selector"/>
+      <RadioButton android:id="@+id/dstv"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"       
+          android:text="DSTV"
+                  		style="@style/list_radio_button"
+          android:button="@drawable/radio_button_selector" />
+    </RadioGroup>
+
+          </LinearLayout>
+      
+                                   <include layout="@layout/list_divider" />
+      		               <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/account_no_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Account Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/account_no_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+                                  <include layout="@layout/list_divider" />
+      		               <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/enter_account_amount_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Amount"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/enter_account_amount_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+                                <include layout="@layout/list_divider" />
+      		               <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/name_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Bill Alias"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/name_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+      		                                   <include layout="@layout/list_divider" />
+      		               	<Button
+	android:id="@+id/enter_account_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Submit"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+            	    android:layout_marginBottom="5dp"          
+        		/>
+          
+</LinearLayout>
+      </LinearLayout>
+      
+</LinearLayout>

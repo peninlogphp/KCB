@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/insurance_buy_cover_cfc_life"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+           android:layout_gravity="center"
+            >     		       
+         
+  <lipuka.android.view.SafeViewFlipper android:id="@+id/cfc_life_flipper"
+android:layout_width="286dp" android:layout_height="fill_parent"
+		     		     
+  	         		   				android:layout_margin="0dp"
+		     
+>
+<!--adding views to ViewFlipper-->
+       <include layout="@layout/insurance_buy_cover_cfc_life_products_menu" />
+    <include layout="@layout/insurance_buy_cover_cfc_life_life_insurance" />
+    <include layout="@layout/insurance_buy_cover_cfc_life_education_plan" />
+    
+            </lipuka.android.view.SafeViewFlipper>  
+
+            
+        
+            
+         </LinearLayout>
+		

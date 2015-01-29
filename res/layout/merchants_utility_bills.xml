@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/merchants_utility_bills"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+                   <include layout="@layout/pay_bills_saved_title_bar" />
+                                        <include layout="@layout/list_divider" />
+       <include layout="@layout/pay_bills_saved" />
+       
+				           <include layout="@layout/pay_bills_merchants_title_bar" />
+				              <include layout="@layout/list_divider" />
+				           <include layout="@layout/pay_bills_merchants" />
+				           
+				           <include layout="@layout/pay_bills_other_title_bar" />
+				            <include layout="@layout/list_divider" />
+				           <include layout="@layout/pay_bills_other" />
+         </LinearLayout>
+		

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/pay_bills_other"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Merchant Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ 
+  <AutoCompleteTextView 
+        android:id="@+id/merchant_name_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+
+          </LinearLayout>
+          
+      		                                          <include layout="@layout/list_divider" />     
+       	                 <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Account Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+ <EditText 
+        android:id="@+id/other_account_number_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />
+                                                    <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Amount"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+ <EditText 
+        android:id="@+id/other_amount_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />
+          	                  
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+       <TextView
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+        android:text="Save Bill"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+     
+     <CheckBox android:id="@+id/other_save_bill"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+                android:layout_marginRight="3dp"       
+        />
+ <EditText 
+        android:id="@+id/other_alias_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+               android:hint="Bill Alias"
+        />
+          </LinearLayout>	
+          
+                       <include layout="@layout/list_divider" />          	
+      	<Button
+	android:id="@+id/other_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Pay Now"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+                <include layout="@layout/list_divider" />
+      	
+         </LinearLayout>
+		

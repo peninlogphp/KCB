@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/dialog_background"
+android:orientation="vertical"
+android:gravity="center" android:layout_width="fill_parent">
+<LinearLayout
+android:background="@drawable/dialog_inner_bg"
+android:orientation="vertical"
+android:gravity="center" android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_margin="5dp">
+<LinearLayout android:id="@+id/title_layout"
+android:layout_height="wrap_content" 
+android:orientation="horizontal"
+android:gravity="center" android:layout_width="wrap_content">
+<ImageView android:id="@+id/title_icon" android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:src="@drawable/dialog_icon">
+</ImageView>
+<TextView android:id="@+id/title" android:layout_height="wrap_content"
+android:layout_width="wrap_content" 
+android:textSize="18dp"
+			android:layout_gravity="center"
+			        style="@style/small_title_text"
+			>
+</TextView>
+</LinearLayout>
+          <include layout="@layout/list_divider" />
+
+<TextView android:id="@+id/message" android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:layout_margin="7dp" 
+        style="@style/message_text"
+android:layout_gravity="center">
+			</TextView>
+	 <EditText 
+        android:id="@+id/pin_field"  
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+                      android:layout_marginRight="10dp"
+                       android:layout_marginLeft="10dp"
+                                                 style="@style/edittext_stanchart"
+        />		
+<LinearLayout android:id="@+id/button_layout"
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:orientation="horizontal"
+android:gravity="center" 
+android:layout_marginRight="10dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginBottom="10dp">
+<Button android:layout_width="75dp"
+android:layout_height="30dp" android:text="OK" 
+android:id="@+id/ok_button"
+        android:background="@drawable/ecobank_button"
+        style="@style/lipuka_button"
+                android:layout_marginRight="10dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center" 
+        ></Button>
+        <Button android:layout_width="100dp"
+android:layout_height="30dp" android:text="CANCEL" 
+android:id="@+id/cancel_button"
+        android:background="@drawable/ecobank_button"
+        style="@style/lipuka_button"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center" 
+        ></Button>
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

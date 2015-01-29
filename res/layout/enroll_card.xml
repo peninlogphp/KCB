@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/enroll_card"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+             <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+         	        	 	        android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Card Holder Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/card_holder_name_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />
+                                        <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Card Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/card_no_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                               <include layout="@layout/list_divider" /> 
+                                         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+   		   				android:layout_marginTop="2dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Security Code (CVV)"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/security_code_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                       <include layout="@layout/list_divider" />
+               <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="110dp"
+		android:layout_height="wrap_content"
+        android:text="Expiry Date(MM/YY)"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+ <Spinner 
+        android:id="@+id/expiry_month_spinner"
+        android:layout_width="83dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+            android:textSize="16dp"
+              android:background="@drawable/slim_spinner_normal"       
+    />
+ 
+
+ <Spinner 
+        android:id="@+id/expiry_year_spinner"
+        android:layout_width="83dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+            android:textSize="16dp"
+               android:background="@drawable/slim_spinner_normal"       
+    />
+          </LinearLayout>  
+            <include layout="@layout/list_divider" />               
+                              <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+  <CheckBox android:id="@+id/accept_terms"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+        />
+                                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+		    android:layout_gravity="center"             
+ >
+ 
+ <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:text="I have read and agree with the"
+		android:gravity="left|center" 
+		style="@style/label_text"
+			android:padding="1dp" 
+		/>
+         <TextView
+		android:id="@+id/terms_link"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		android:padding="1dp" 
+		/> 
+ 
+          </LinearLayout>	
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />            	
+      	<Button
+	android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Sign Up"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+            	    android:layout_marginBottom="5dp"          
+        		/>
+         </LinearLayout>
+		

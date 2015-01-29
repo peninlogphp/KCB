@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<item type="id" name="action_bar_refresh" />
+	<item type="id" name="action_bar_home" />
+	<item type="id" name="action_bar_activate" />
+	<item type="id" name="action_bar_view_help" />
+	<item type="id" name="action_bar_search" />
+	<item type="id" name="notification_activation" />
+		<item type="id" name="notification_response" />
+		<item type="id" name="notification_download_progress" />
+		<item type="id" name="notification_download_message" />	
+	<item type="id" name="pending_intent_activation" />
+		<item type="id" name="update_profile_response" />
+		<item type="id" name="subscribe_response" />
+		<item type="id" name="change_otp_response" />
+		<item type="id" name="self_activate_response" />
+		
+</resources>

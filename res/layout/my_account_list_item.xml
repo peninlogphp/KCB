@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	 
+	    <ImageView
+	        android:id="@+id/listitem_icon"
+	        android:layout_gravity="left|center_vertical"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        	        android:layout_weight="0"
+	        	                           		    android:layout_marginLeft="5dp"
+	        />
+	 
+	    <TextView
+	        android:id="@+id/listitem_label"
+    		android:padding="10dp"
+	        android:paddingLeft="10dp"
+	        android:layout_gravity="center"
+	        android:layout_width="0.0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	            style="@style/small_title_text"
+	             />
+	    
+	    <ImageView
+	        android:id="@+id/listitem_arrow"
+	        android:layout_gravity="right|center_vertical"
+	        android:layout_width="0.0dp"
+	        android:layout_height="wrap_content"
+	        	        android:layout_weight="1"
+	        android:src="@drawable/rounded_next_btn" />
+	 
+	</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+			   <LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layer_background"
+ android:orientation="vertical"            
+ >
+ 	 <include layout="@layout/ecobank_action_bar" />
+			      <include layout="@layout/cfc_title_bar" />
+			      					      		       
+				           <FrameLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   		    android:layout_gravity="center"             
+    >
+<LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+		    android:layout_gravity="center"             
+          android:background="@drawable/main_content_bg"
+ android:layout_marginRight="3dp"
+ 		     android:layout_marginLeft="3dp">
+  
+  <LinearLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+        android:text="@string/date_n_time"
+		android:gravity="left|center" 
+		style="@style/small_title_text"
+		/>
+
+ <TextView
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+        android:text="Amount (KES)"
+		android:gravity="left|center" 
+		style="@style/small_title_text"
+		/>
+  
+          </LinearLayout>  
+           <LinearLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+        android:text="Ref No."
+		android:gravity="left|center" 
+		style="@style/small_title_text"
+		/>
+
+ <TextView
+		android:layout_width="132dp"
+		android:layout_height="wrap_content"
+        android:text="Balance (KES)"
+		android:gravity="left|center" 
+		style="@style/small_title_text"
+		/>
+  
+          </LinearLayout>
+                                             <include layout="@layout/list_divider" />
+           	                 
+        <ListView android:id="@+id/lipuka_list_view" 
+  android:layout_height="wrap_content"
+android:layout_width="300dp"
+	android:gravity="center"
+	 android:listSelector="@drawable/my_account_list_selector"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+                                    style="@style/ecobank_list_view"
+>
+</ListView>
+	          </LinearLayout>               	                 
+        			           
+				           			
+		
+
+ 			   			    				    		 <RelativeLayout
+    android:id="@+id/help_layout"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+>   
+ <WebView  
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    android:background="@drawable/help_background"
+/>
+
+ <ImageButton
+    	 android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:background="#00000000"
+        android:src="@drawable/fileclose"
+         android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    </FrameLayout>
+ 			   			    				    		 
+        </LinearLayout> 
+ 			   

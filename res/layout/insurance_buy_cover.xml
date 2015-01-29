@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/insurance_buy_cover"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+           android:layout_gravity="center"
+            >  
+        		       
+          <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal" 
+  android:layout_gravity="center"
+  										android:layout_marginTop="2dp"
+  	         		   				android:layout_marginBottom="0dp"
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp">
+<TextView
+		android:id="@+id/heritage_text"
+		android:layout_width="148dp"
+		android:layout_height="36dp"
+		android:gravity="center" 
+		  android:layout_gravity="center"
+		style="@style/tab_title_text"
+		android:layout_marginBottom="0dp"
+		android:text="UAP" 		
+    android:background="@drawable/tab_selected"
+		/>
+<TextView
+		android:id="@+id/cfc_life_text"
+		android:layout_width="148dp"
+		android:layout_height="36dp"
+		android:gravity="center" 
+		  android:layout_gravity="center"
+		style="@style/tab_title_text"
+		android:layout_marginBottom="0dp"
+		android:text="Jubilee" 		
+    android:background="@drawable/tab_unselected"		
+		/>
+                  </LinearLayout> 
+
+ 
+          <lipuka.android.view.SafeViewFlipper android:id="@+id/buy_cover_flipper"
+android:layout_width="296dp" android:layout_height="fill_parent"
+		     android:paddingRight="5dp"
+		     		     android:paddingLeft="5dp"
+		     		     android:paddingBottom="20dp"
+		     		     
+  	         		   				android:layout_marginLeft="1dp"
+ 		   				android:layout_marginRight="1dp"		   				
+  	         		   				android:layout_marginBottom="1dp"
+       android:background="@drawable/tab_content"
+  android:layout_gravity="center"
+		     
+>
+<!--adding views to ViewFlipper-->
+       <include layout="@layout/insurance_buy_cover_heritage" />
+    <include layout="@layout/insurance_buy_cover_cfc_life" />
+      
+            </lipuka.android.view.SafeViewFlipper>     
+        
+          
+         </LinearLayout>
+		

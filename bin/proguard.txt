@@ -1,0 +1,426 @@
+# view land\res/layout-land/stanchart_home_with_buttons_to_the_side.xml #generated:37
+# view res/layout/mg_home.xml #generated:36
+# view res/layout/stanchart_home.xml #generated:36
+# view res/layout/wu_home.xml #generated:36
+-keep class android.opengl.GLSurfaceView { <init>(...); }
+
+# view res/layout/merchants.xml #generated:57
+-keep class com.devsmart.android.ui.HorizontalListView { <init>(...); }
+
+# view res/layout/find_atm.xml #generated:20
+# view res/layout/find_atm_branch.xml #generated:27
+# view res/layout/find_branch.xml #generated:20
+# view res/layout/locator.xml #generated:20
+# view res/layout/mg_locator.xml #generated:20
+-keep class com.readystatesoftware.maps.TapControlledMapView { <init>(...); }
+
+# view res/layout/gd_content_dashboard.xml #generated:31
+# view res/layout/gd_content_empty.xml #generated:27
+# view res/layout/gd_content_normal.xml #generated:27
+# view res/layout/gd_expandable_list_content_dashboard.xml #generated:32
+# view res/layout/gd_expandable_list_content_empty.xml #generated:32
+# view res/layout/gd_expandable_list_content_normal.xml #generated:32
+# view res/layout/gd_list_content_dashboard.xml #generated:32
+# view res/layout/gd_list_content_empty.xml #generated:32
+# view res/layout/gd_list_content_normal.xml #generated:32
+# view res/layout/gd_tab_content.xml #generated:27
+-keep class greendroid.widget.ActionBar { <init>(...); }
+
+# view res/layout/gd_content_dashboard.xml #generated:19
+# view res/layout/gd_content_empty.xml #generated:20
+# view res/layout/gd_content_normal.xml #generated:20
+# view res/layout/gd_expandable_list_content_dashboard.xml #generated:20
+# view res/layout/gd_expandable_list_content_empty.xml #generated:20
+# view res/layout/gd_expandable_list_content_normal.xml #generated:20
+# view res/layout/gd_list_content_dashboard.xml #generated:20
+# view res/layout/gd_list_content_empty.xml #generated:20
+# view res/layout/gd_list_content_normal.xml #generated:20
+# view res/layout/gd_tab_content.xml #generated:20
+-keep class greendroid.widget.ActionBarHost { <init>(...); }
+
+# view res/layout/gd_thumbnail_item_view.xml #generated:27
+# view res/layout/image_item_view.xml #generated:11
+# view res/layout/merchant_categories_item.xml #generated:7
+-keep class greendroid.widget.AsyncImageView { <init>(...); }
+
+# view res/layout/home.xml #generated:123
+# view res/layout/home.xml #generated:67
+# view res/layout/home.xml #generated:96
+-keep class greendroid.widget.PageIndicator { <init>(...); }
+
+# view res/layout/home.xml #generated:36
+-keep class greendroid.widget.PagedView { <init>(...); }
+
+# view res/layout/gd_description_item_view.xml #generated:20
+# view res/layout/gd_long_text_item_view.xml #generated:20
+-keep class greendroid.widget.itemview.DescriptionItemView { <init>(...); }
+
+# view res/layout/gd_drawable_item_view.xml #generated:20
+-keep class greendroid.widget.itemview.DrawableItemView { <init>(...); }
+
+# view res/layout/gd_progress_item_view.xml #generated:20
+-keep class greendroid.widget.itemview.ProgressItemView { <init>(...); }
+
+# view res/layout/gd_separator_item_view.xml #generated:20
+-keep class greendroid.widget.itemview.SeparatorItemView { <init>(...); }
+
+# view res/layout/gd_subtext_item_view.xml #generated:20
+-keep class greendroid.widget.itemview.SubtextItemView { <init>(...); }
+
+# view res/layout/gd_subtitle_item_view.xml #generated:20
+-keep class greendroid.widget.itemview.SubtitleItemView { <init>(...); }
+
+# view res/layout/gd_text_item_view.xml #generated:20
+-keep class greendroid.widget.itemview.TextItemView { <init>(...); }
+
+# view res/layout/gd_thumbnail_item_view.xml #generated:20
+-keep class greendroid.widget.itemview.ThumbnailItemView { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class kcb.android.AccountStatement { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class kcb.android.AccountStatementMiniNfull { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class kcb.android.AccountStmt { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class kcb.android.Accounts { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class kcb.android.AddBeneficiary { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class kcb.android.AddCardAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class kcb.android.AgencyBanking { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class kcb.android.AirtimeTopup { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class kcb.android.Alerts { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class kcb.android.CardActivation { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class kcb.android.CardLock { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class kcb.android.ChangePINcfc { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class kcb.android.ChequeBookRequest { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class kcb.android.Cheques { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class kcb.android.CreateAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class kcb.android.CreateMobileAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class kcb.android.CreateMobileAccountNormal { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class kcb.android.CreditCardPayments { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class kcb.android.EditBeneficiary { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class kcb.android.EditCardAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class kcb.android.EditProfileCfc { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class kcb.android.EditSavedCard { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class kcb.android.EditSavedCardNumber { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class kcb.android.EditTransaction { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class kcb.android.Enroll { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class kcb.android.FindAtm { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class kcb.android.FindBranch { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class kcb.android.Forex { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class kcb.android.ForgotCredentials { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class kcb.android.ForgottenUsernamePassword { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class kcb.android.FtTransactionDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class kcb.android.FtTransactionHistoryList { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class kcb.android.FullStmt { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class kcb.android.FundsTransfer { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class kcb.android.FundsTransferNonCard { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class kcb.android.Insurance { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class kcb.android.InvestmentsNcredit { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class kcb.android.Language { <init>(...); }
+
+# view AndroidManifest.xml #generated:8
+-keep class kcb.android.LipukaApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class kcb.android.Locator { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class kcb.android.Main { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class kcb.android.ManageBeneficiaries { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class kcb.android.ManageCardAccounts { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class kcb.android.ManageSavedCardNumbers { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class kcb.android.ManageSavedCards { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class kcb.android.ManageTransactions { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class kcb.android.ManageTransactionsDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class kcb.android.ManageTransactionsList { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class kcb.android.Merchants { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class kcb.android.MgEditBeneficiary { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class kcb.android.MgEditProfile { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class kcb.android.MgFAQs { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class kcb.android.MgHome { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class kcb.android.MgLocator { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class kcb.android.MgManageBeneficiaries { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class kcb.android.MgReceiveMoney { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class kcb.android.MgReceiveMoneyTransactionDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class kcb.android.MgSendMoney { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class kcb.android.MgTransactionDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class kcb.android.MgTransactionHistory { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class kcb.android.MgTransactionHistoryList { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class kcb.android.Mkodi { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class kcb.android.MobileMoneyTransfer { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class kcb.android.MoneyGram { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class kcb.android.MyAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class kcb.android.OneTimePINActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class kcb.android.PINActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class kcb.android.PayBill { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class kcb.android.PayBills { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class kcb.android.PayMaxDashboard { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class kcb.android.PrepaidCards { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class kcb.android.ReceiveMoney { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class kcb.android.ReceiveMoneyTransactionDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class kcb.android.ResetPasswordOTP { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class kcb.android.RetrieveUsernameOTP { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class kcb.android.SalaryAdvance { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class kcb.android.SelfActivation { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class kcb.android.SendMoney { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class kcb.android.SetLanguage { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class kcb.android.Settings { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class kcb.android.SignIn { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class kcb.android.SignInUp { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class kcb.android.SignUp { <init>(...); }
+
+# view AndroidManifest.xml #generated:11
+-keep class kcb.android.StanChartHome { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class kcb.android.Tickets { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class kcb.android.Topup { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class kcb.android.TransactionDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class kcb.android.TransactionHistory { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class kcb.android.TransactionHistoryList { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class kcb.android.TransferFunds { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class kcb.android.WUhome { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class kcb.android.WithdrawCash { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class kcb.android.WuEditProfile { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class kcb.android.WuFAQs { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class kcb.android.kcbMain { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class lipuka.android.model.ActivationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class lipuka.android.model.CancelDownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class lipuka.android.model.NotificationsService { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class lipuka.android.model.SelfActivationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class lipuka.android.model.SetOTPService { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class lipuka.android.model.UpdaterService { <init>(...); }
+
+# view res/layout/viewflipper.xml #generated:18
+-keep class lipuka.android.view.CoverFlow { <init>(...); }
+
+# view res/layout/lipuka_check_box.xml #generated:2
+-keep class lipuka.android.view.LipukaCheckBox { <init>(...); }
+
+# view res/layout/lipuka_navigate_button.xml #generated:3
+-keep class lipuka.android.view.LipukaNavigateButton { <init>(...); }
+
+# view res/layout/lipuka_radio_button.xml #generated:2
+# view res/layout/list_radio_button.xml #generated:2
+-keep class lipuka.android.view.LipukaRadioButton { <init>(...); }
+
+# view res/layout/lipuka_submit_button.xml #generated:3
+-keep class lipuka.android.view.LipukaSubmitButton { <init>(...); }
+
+# view res/layout/lipuka_text_view.xml #generated:2
+-keep class lipuka.android.view.LipukaTextView { <init>(...); }
+
+# view res/layout/lipuka_web_view.xml #generated:2
+-keep class lipuka.android.view.LipukaWebView { <init>(...); }
+
+# view res/layout/airtime_topup.xml #generated:93
+# view res/layout/enroll.xml #generated:67
+# view res/layout/ft_to_another_person_noncard.xml #generated:42
+# view res/layout/funds_transfer_to_another_person.xml #generated:68
+# view res/layout/insurance_buy_cover.xml #generated:45
+# view res/layout/insurance_buy_cover_cfc_life.xml #generated:11
+# view res/layout/insurance_buy_cover_heritage.xml #generated:11
+# view res/layout/merchants.xml #generated:77
+# view res/layout/mg_send_money.xml #generated:118
+# view res/layout/moneygram_receive_money.xml #generated:42
+# view res/layout/moneygram_send_money.xml #generated:68
+# view res/layout/sign_up.xml #generated:66
+# view res/layout/transfer_funds_main.xml #generated:64
+# view res/layout/wu_send_money.xml #generated:118
+-keep class lipuka.android.view.SafeViewFlipper { <init>(...); }
+
+# view res/layout/coverflow.xml #generated:4
+# view res/layout/coverflow.xml #generated:9
+-keep class lipuka.android.view.coverflow.CoverFlow { <init>(...); }
+
+# view res/layout/tickets.xml #generated:36
+-keep class pl.polidea.coverflow.CoverFlow { <init>(...); }
+

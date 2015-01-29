@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/airtime_topup_other_number"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Mobile Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <AutoCompleteTextView 
+        android:id="@+id/mobile_no_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+               android:hint="name/No."  
+        />
+          </LinearLayout>
+          
+      		                                          <include layout="@layout/list_divider" />
+     <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Mobile Network"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/other_mobile_network_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />
+    
+	<LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="left"             
+  		   				android:layout_marginTop="10dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Select Amount:"
+		android:gravity="left" 
+		style="@style/label_text"
+		/>
+   <RadioGroup
+              android:id="@+id/other_amounts_layout"  
+      android:layout_width="140dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <RadioButton android:id="@+id/other_hundred"
+          android:layout_width="140dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"       
+          android:text="100" 
+           style="@style/list_radio_button"
+          android:button="@drawable/radio_button_selector"/>
+      <RadioButton android:id="@+id/other_twohundrednfifty"
+          android:layout_width="140dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"       
+          android:text="250"
+           style="@style/list_radio_button"
+          android:button="@drawable/radio_button_selector" />
+        <RadioButton android:id="@+id/other_fivehundred"
+          android:layout_width="140dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"       
+          android:text="500"
+           style="@style/list_radio_button"
+          android:button="@drawable/radio_button_selector" />
+         <RadioButton android:id="@+id/other_thousand"
+          android:layout_width="140dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"       
+          android:text="1000"
+           style="@style/list_radio_button"
+          android:button="@drawable/radio_button_selector"/>
+          <RadioButton android:id="@+id/other_specify_amount"
+          android:layout_width="140dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"       
+          android:text="Specify Amount"
+           style="@style/list_radio_button"
+          android:button="@drawable/radio_button_selector"  />
+    </RadioGroup>
+
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />
+                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+   		   				android:layout_marginTop="2dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Amount"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/other_amount_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                       <include layout="@layout/list_divider" />
+      
+      	<Button
+	android:id="@+id/other_number_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Top Up"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+            
+         </LinearLayout>
+		

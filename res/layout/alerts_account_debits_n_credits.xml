@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/alerts_account_debits_n_credits"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+                   
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+        android:text="Alert me on account debits"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <CheckBox android:id="@+id/alert_on_debit"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+        />
+ 
+          </LinearLayout>	
+       		                                          <include layout="@layout/list_divider" />     
+         
+            <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+        android:text="Alert me on account credits"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <CheckBox android:id="@+id/alert_on_credit"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+        />
+ 
+          </LinearLayout>	
+       		                                          <include layout="@layout/list_divider" />     
+            <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Send via"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ 
+<Spinner 
+        android:id="@+id/means_spinner"
+        android:layout_width="150dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+            android:textSize="16dp"
+              android:background="@drawable/slim_spinner_normal"       
+    />
+
+          </LinearLayout>
+          
+      		                                          <include layout="@layout/list_divider" />     
+       	                      	
+      	<Button
+	android:id="@+id/account_debits_n_credits_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Save"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+                <include layout="@layout/list_divider" />
+      	
+         </LinearLayout>
+		

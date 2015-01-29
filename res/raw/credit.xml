@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<servicexml>
+
+<activity id="main" type="list" title="Main">
+<list type="normal" source="">
+  <item value="balance">Balance</item>
+  <item value="ministmt">Mini Statement</item>
+    <item value="cardpayment">Card Payment</item>
+</list>
+<navigate activity="" label="Next"></navigate>
+</activity>
+  
+	<activity id="balance" type="default" title="Balance Enquiry">
+<edittext id="PIN" lines="1" length="4" required="true" type="password" label="Enter PIN">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/balance.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+
+ <activity id="ministmt" type="default" title="Mini Statement">
+<edittext id="PIN" lines="1" length="4" required="true" type="password" label="Enter PIN">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/ministmt.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+
+<activity id="cardpayment" type="list" title="Choose Account">
+<list type="normal" source="accounts">
+</list>
+<navigate activity="cardpayment_amount" label="Next"></navigate>
+</activity>
+
+<activity id="cardpayment_amount" type="default" title="Amount">
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Amount">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/cardpayment.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+</servicexml>

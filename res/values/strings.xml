@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">KCB Mobile</string>
+        <string name="notificationsservice">Notifications Service</string>
+        <string name="pin_prompt">Enter PIN</string>
+        <string name="pin_submit">Submit</string>
+                <string name="pin_error">PIN should be at least 4 characters</string>
+        
+                <string name="one_time_pin_prompt">Enter one-time PIN</string>
+                <string name="new_pin_prompt">Enter new PIN</string>
+                <string name="confirm_pin_prompt">Confirm new PIN</string>
+        
+                <string name="pin_title">PIN</string>
+                <string name="banking_title">Ecobank Mobile Banking</string>
+                <string name="music_title">Music</string>
+                <string name="info_title">Info</string>
+                <string name="activate_title">Activate</string>
+                <string name="mobile_money_transfer_title">Mobile Money Transfer</string>
+                <string name="funds_transfer_title">Funds Transfer</string>
+                <string name="pay_bill_title">Pay Bill</string>
+                <string name="topup_title">Topup</string>
+                <string name="full_stmt_title">Full Statement</string>
+                <string name="forex_title">Forex</string>
+                 <string name="change_pin_title">Change PIN</string>
+                 <string name="cheque_book_request_title">Cheque Book Request</string>
+                 <string name="accounts_title">Set Up Account</string>
+                 <string name="withdraw_cash_title">Withdraw Cash</string>
+                 
+                <string name="main">Main</string>
+                <string name="exit">Exit</string>
+                
+     <string name="notification_download_complete">Your download is complete</string>
+            <string name="loading">Loading...</string>
+   <string name="network_error_title">Network Error</string>
+   <string name="network_error">Please check if your Internet connection is OK and try again</string>
+      <string name="network_retry">Retry</string>
+   
+         <string name="request_on">Please wait for the current request to complete</string>
+     
+       <string name="notification_download_complete">%1$s downloaded.</string>
+         <string name="notification_download_started">Your %1$s download has been started. Click here to cancel</string>
+         <string name="notification_download_started_toast">Your %1$s download has been started.</string>
+         <string name="notification_no_memory">You don\'t have enough memory</string>
+         <string name="notification_no_sdcard">Please insert an SD card</string>
+         <string name="notification_sdcard_unmounted">Please make sure your SD card is mounted</string>
+         <string name="notification_sdcard_read_only">We cannot currently write to your SD card</string>
+         <string name="notification_sdcard_nofs">We could not find a supported filesystem on your SD card</string>
+         <string name="notification_sdcard_shared">Your SD card is currently being used by USB mass storage</string>
+         <string name="notification_sdcard_unmountable">Your SD card is probably corrupted</string>
+         <string name="notification_download_error">Oops! An error occurred during %1$s download</string>
+              <string name="notification_download_cancelled">You cancelled %1$s download</string>
+              <string name="notification_download_added">%1$s download has been started already</string>
+              <string name="notification_download_location">Click here or go to /sdcard/LipukaDownloads</string>
+       
+         <string name="activate">Activate</string>
+          <string name="activate_text">The service you are trying to access needs activation.During activation, we validate your mobile number and check the services you have registered for
+          at your bank so that we customize our services for you. For banking, you need to have at least one account with our client banks. To download music or subscribe to a channel, sending an activation request successfully by clicking 
+          the activate button is all you need to do</string>
+      <string name="activation_network_error_msg">Please check your Internet connection and try again</string>
+   <string name="activation_sms_delivered">Activation SMS delivered. \nPlease wait for activation result</string>
+   <string name="activation_sms_not_delivered">Activation SMS not delivered, Please try again</string>
+   <string name="activation_sms_sent">Activation SMS sent</string>
+   <string name="activation_sms_failed">Activation SMS failed, Our service may be unreachable from your network or you do not have network</string>
+   <string name="activation_sms_service_unavailable">Activation SMS failed, service currently unavailable</string>
+   <string name="activation_sms_service_off">Activation SMS failed, service turned off</string>
+         
+                  <string name="news_title">News Headlines</string>
+                  <string name="news_text">For the latest news headlines in business, politics, sports, and more</string>
+                  <string name="breaking_news_title">Breaking News</string>
+                  <string name="breaking_news_text">Get informed when it matters most</string>
+                  <string name="business_news_title">Business News</string>
+                  <string name="business_news_text">Your business depends on timely information</string>
+                  <string name="sports_news_title">Sports News</string>
+                  <string name="sports_news_text">Don\'t miss any moment of the action</string>
+                  <string name="stock_updates_title">Stock Updates</string>
+                  <string name="stock_updates_text">Stay ahead of the pack with the latest stock info</string>
+				  <string name="bible_title">Bible</string>
+                  <string name="bible_text">Need spiritual nourishment? No sweat</string>
+                  <string name="love_title">Love tips</string>
+                  <string name="love_text">Make things work in your love life</string>
+                  <string name="inspiration_title">Inspirational Quotes</string>
+                  <string name="inspiration_text">Be inspired by great minds</string>   
+                  <string name="unsubscribe_prompt">You can stop getting alerts on %1$s by clicking on the button below</string>   
+                  <string name="unsubscribe">unsubscribe</string>   
+                  
+                          <string name="download_text">Download</string>
+                   
+                          <string name="prbt_set">Set Tone</string>
+                          <string name="prbt_prompt">Enter your name to request for a personalized ring-back tone</string>
+                          <string name="prbt_submit">Submit</string>
+                          <string name="prbt_name_error">Please enter a name</string>
+                          <string name="no_prbt">Sorry, there is currently no personalized ring-back tone for the name \"%1$s\"</string>
+                           <string name="prbt_sms_sent">Ring-back tone SMS request for %1$s successfully sent </string>
+   <string name="prbt_sms_failed">Ring-back tone SMS request for %1$s failed, Please try again later</string>
+   <string name="prbt_sms_service_unavailable">Ring-back tone SMS request for %1$s failed, network currently unavailable</string>
+   <string name="prbt_sms_service_off">Ring-back tone SMS request for %1$s failed, service turned off</string>
+         
+                           <string name="fan_page_title">Fan Page</string>
+                           <string name="fan_page_follow_text">Follow me</string>
+                           <string name="fan_page_follow_prompt">Follow me for alerts on my music and events</string>
+                           <string name="fan_page_music_text">View My Music</string>
+                           <string name="fan_page_lyrics_text">View My Lyrics</string>
+                           <string name="fan_page_view_lyrics">View</string>
+                           
+                            <string name="search_by_title_prompt">Search by Song Title</string>
+                             <string name="search_by_artist_prompt">Search by Artist</string>
+                                                     <string name="search_param_error">Please enter a keyword</string>
+       
+                          <string name="update_profile">Update Profile</string>
+                           
+                          <string name="change_otp_confirmed">One time pin change succeeded, Click to proceed</string>
+                          <string name="change_otp">Change One time PIN</string>
+                          <string name="self_activation">Self Activation</string>
+                             <string name="about">About</string>
+                             
+                         <string name="investments_n_credit">Investments &amp; Credit</string>
+                         <string name="account_debits_n_credits">Account Debits &amp; Credits</string>
+                         <string name="monthly_contribution">Monthly Contribution &amp; Benefit (Ksh.)</string>
+                         <string name="date_n_time">Date &amp; Time</string>
+                         <string name="date_n_time_with_colon">Date &amp; Time:</string>
+                         
+                                       <string-array name="id_types_array">
+        <item>National ID number</item>
+        <item>Passport number</item>
+    </string-array>  
+                              
+</resources>

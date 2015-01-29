@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+
+<servicexml>
+
+<activity id="main" type="list" title="Main">
+<list type="normal" source="">
+  <item value="balance">Balance</item>
+  <item value="ministmt">Mini Statement</item>
+     <item value="topup">Buy air time</item>
+  <item value="transferfunds">Transfer Funds</item>
+    <item value="withdrawcash">Withdraw Cash</item>
+    <item value="mpesatransfer">Transfer to Mpesa</item>
+  <item value="paybill">Pay Bill</item>
+    <item value="chequebk">Cheque Book Requests</item>
+   <item value="fullstmt">Full Statement</item>
+  <item value="forex">Forex Rates</item>
+  <item value="stopcheque">Stop Cheque</item>
+  <item value="changepin">Change PIN</item>
+</list>
+<navigate activity="" label="Next"></navigate>
+</activity>
+  
+	<activity id="balance" type="default" title="Balance Enquiry">
+<edittext id="PIN" lines="1" length="4" required="true" type="password" label="Enter PIN">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/balance.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+
+ <activity id="ministmt" type="default" title="Mini Statement">
+<edittext id="PIN" lines="1" length="4" required="true" type="password" label="Enter PIN">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/ministmt.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+
+<activity id="topup" type="list" title="Topup">
+<list type="other" source="contacts">
+  <item value="own">Own Number</item>
+<item value="networks">Other</item>
+</list>
+<navigate activity="topupamt" label="Next"></navigate>
+</activity>
+
+<activity id="networks" type="list" title="Choose Network">
+<list type="normal" source="">
+  <item value="safaricom">Safaricom</item>
+  <item value="yu">Yu</item>
+     <item value="airtel">Airtel</item>
+  <item value="orange">Orange</item>
+</list>
+<navigate activity="topupdest" label="Next"></navigate>
+</activity>
+
+<activity id="topupdest" type="default" title="Topup">
+<edittext id="phoneno" lines="1" length="30" required="true" type="phone" label="Enter Phone No.">
+</edittext>
+<navigate activity="topupamt" label="Next"></navigate>
+</activity>
+
+<activity id="topupamt" type="default" title="Amount">
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Ammount">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/topup.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+<activity id="transferfunds" type="list" title="Funds Transfer">
+<list type="normal" source="">
+<item value="tfbankaccount">Bank Account</item>
+<item value="tfvbankaccount">Virtual Bank Account</item>
+</list>
+<navigate activity="" label="Next"></navigate>
+</activity>
+
+<activity id="tfbankaccount" type="list" title="Funds Transfer">
+<list type="other" source="nominations">
+<item value="fundsdest">Other</item>
+</list>
+<navigate activity="fundsamt" label="Next"></navigate>
+</activity>
+
+<activity id="tfvbankaccount" type="default" title="Funds Recipient">
+<edittext id="phoneno" lines="1" length="30" required="true" type="phone" label="Enter Phone No.">
+</edittext>
+<navigate activity="fundsamt" label="Next"></navigate>
+</activity>
+
+<activity id="fundsdest" type="default" title="Funds Recipient">
+<edittext id="accno" lines="1" length="30" required="true" type="number" label="Enter Account No.">
+</edittext>
+<navigate activity="fundsamt" label="Next"></navigate>
+</activity>
+
+<activity id="fundsamt" type="default" title="Amount">
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Ammount">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/transferfunds.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+<activity id="withdrawcash" type="default" title="Withdraw Cash">
+<edittext id="agentno" lines="1" length="30" required="true" type="number" label="Enter Agent No.">
+</edittext>
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Ammount">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/withdrawcash.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+<activity id="mpesatransfer" type="list" title="Transfer to Mpesa">
+<list type="other" source="contacts">
+      <item value="own">Own Number</item>
+<item value="mpesafundsdest">Other</item>
+</list>
+<navigate activity="mpesaamt" label="Next"></navigate>
+</activity>
+
+<activity id="mpesafundsdest" type="default" title="Mpesa Transfer Recipient">
+<edittext id="phoneno" lines="1" length="30" required="true" type="phone" label="Enter Phone No.">
+</edittext>
+<navigate activity="mpesaamt" label="Next"></navigate>
+</activity>
+
+<activity id="mpesaamt" type="default" title="Mpesa Amount">
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Ammount">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/mpesaft.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+ <activity id="paybill" type="list" title="Pay Bill">
+<list type="other" source="enrollments">
+<item value="merchants">Other</item>
+</list>
+<navigate activity="billamt" label="Next"></navigate>
+</activity>
+
+<activity id="merchants" type="list" title="Choose Merchant">
+<list type="normal" source="">
+  <item value="reaslestate">Real Estate</item>
+  <item value="nairobiwater">Nairobi Water</item>
+</list>
+<navigate activity="bill" label="Next"></navigate>
+</activity>
+
+<activity id="bill" type="default" title="Pay Bill">
+<edittext id="no" lines="1" length="30" required="true" type="number" label="Enter Bill No.">
+</edittext>
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Ammount">
+</edittext>
+<edittext id="name" lines="1" length="40" required="false" type="text" label="Name this Bill (Optional)">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/paybill.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+<activity id="billamt" type="default" title="Bill Amount">
+<edittext id="amt" lines="1" length="30" required="true" type="decimal" label="Enter Ammount">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/paybill.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+<activity id="forex" type="list" title="Forex">
+<list type="normal" source="">
+  <item value="USD">USD</item>
+  <item value="EUR">EUR</item>
+  <item value="GBP">GBP</item>
+  <item value="ZAR">ZAR</item>
+  <item value="TZS">TZS</item>
+  <item value="UGK">UGK</item>
+  <item value="AED">AED</item>
+  <item value="AUD">AUD</item>
+  <item value="CAD">CAD</item>
+  <item value="CHF">CHF</item>
+  <item value="DKK">DKK</item>
+  <item value="FRF">FRF</item>
+  <item value="INR">INR</item>
+  <item value="JPY">JPY</item>
+  <item value="NOK">NOK</item>  
+  <item value="SEK">SEK</item>
+</list>
+<submit action="http://10.100.100.23/lipuka/forex.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+			
+<activity id="changepin" type="default" title="Change PIN">
+<edittext id="newpin1" lines="1" length="4" required="true" type="password" label="Enter New PIN">
+</edittext>
+<edittext id="newpin2" lines="1" length="4" required="true" type="password" label="Confirm New PIN">
+</edittext>
+<edittext id="pin" lines="1" length="4" required="true" type="password" label="Enter Current PIN">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/changepin.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+
+<activity id="stopcheque" type="default" title="Stop Cheque">
+<edittext id="chequeno" lines="1" length="30" required="true" type="number" label="Enter Cheque No.">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/stopcheque.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+<activity id="fullstmt" type="default" title="Full Statement">
+<edittext id="startdate" lines="1" length="30" required="true" type="date" label="Start Date">
+</edittext>
+<edittext id="enddate" lines="1" length="30" required="true" type="date" label="End Date">
+</edittext>
+<submit action="http://10.100.100.23/lipuka/fullstmt.php" method="post" bearer="http" label="Submit" pin="true"></submit> 
+</activity>
+
+<activity id="chequebk" type="list" title="Cheque Book Request">
+<list type="normal" source="">
+  <item value="50">50 leaves</item>
+  <item value="100">100 leaves</item>
+</list>
+<submit action="http://10.100.100.23/lipuka/chequebk.php" method="post" bearer="http" label="Submit" pin="false"></submit> 
+</activity>
+
+</servicexml>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+	<msisdn>254714834065</msisdn>
+	<banks>
+	<bank name="KCB" clientID="1">
+	<account alias="Savings" type="CBS" accountID="12"></account>
+
+	<account alias="M-Pesa" type="VB" accountID="13"></account>
+
+         <account alias="Credit" type="CREDIT" accountID="13"></account>
+	   
+	</bank>
+
+	<bank name="STANDARD CHARTERED" clientID="3">
+	<account alias="Savings" type="CBS" accountID="21"></account>
+
+	<account alias="M-Pesa" type="VB" accountID="22"></account>
+	   
+	 <account alias="Debit" type="DEBIT" accountID="24"></account>
+	</bank>
+	</banks>
+<nominations>
+		<nomination alias="Landlord"></nomination>	
+		<nomination alias="James"></nomination>
+</nominations>
+<enrollments>
+	<enrollment alias="Stima" merchant ="KPLC">
+	</enrollment>
+	<enrollment alias="Maji" merchant ="NWC">
+	</enrollment>
+</enrollments>
+</profile>
+

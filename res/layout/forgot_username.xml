@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/forgot_username"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+        <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/card_number_label"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Card Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/card_number_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+      		                                          <include layout="@layout/list_divider" />     
+      
+            <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/id_number_label"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="ID Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/id_number_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+              android:lines="1"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"  />
+          </LinearLayout> 
+          		      		                                          <include layout="@layout/list_divider" />     
+            
+      	<Button
+	android:id="@+id/forgot_username_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Submit"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+            	    android:layout_marginBottom="5dp"          
+        		/>
+                <include layout="@layout/list_divider" />
+      	
+         </LinearLayout>
+		

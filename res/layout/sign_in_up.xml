@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layer_background"
+    >
+    
+			   <LinearLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:orientation="vertical"            
+ 		    android:layout_gravity="center"             
+     android:background="@drawable/inner_bg"
+        		              		       android:layout_marginRight="3dp"
+        		              		       android:layout_marginLeft="3dp"
+ >
+  
+			      <include layout="@layout/ecobank_action_bar" />
+			      <include layout="@layout/sign_in_title_bar" />
+			      		       
+				           <FrameLayout android:id="@+id/sign_in_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      		    android:layout_gravity="center"             
+    >
+<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		> 
+			    		<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >     		       
+        <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/username_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Username"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/username_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+      		                                          <include layout="@layout/list_divider" />     
+      
+          	                  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/password_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Password"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/password_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />
+          	                  
+              <TextView
+		android:id="@+id/forgot_password_link"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+				android:gravity="center" 
+		style="@style/label_text"
+		        		    android:layout_gravity="center"       
+		/> 	
+      	<Button
+	android:id="@+id/sign_in"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Sign In"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+            	    android:layout_marginBottom="5dp"          
+        		/>
+            
+            
+         </LinearLayout>
+		
+			</ScrollView>
+			    				    		 <RelativeLayout
+    android:id="@+id/help_layout"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+>   
+ <WebView  
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    android:background="@drawable/help_background"
+/>
+
+ <ImageButton
+    	 android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:background="#00000000"
+        android:src="@drawable/fileclose"
+         android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+	 			   			  	 		        </FrameLayout>
+	 			   			  	 		        
+				           <include layout="@layout/sign_up_title_bar" />
+			      		       
+				           <FrameLayout android:id="@+id/sign_up_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   		             		       android:layout_marginBottom="50dp"
+   		    android:layout_gravity="center"             
+                		       android:visibility="gone"              		    
+    >
+<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		> 
+			    		<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >     		       
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/card_number_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Card Number"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/card_number_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+          
+      		                                          <include layout="@layout/list_divider" />
+     
+      
+      
+          	                  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:id="@+id/authentication_code_label"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+        android:text="Authentication Code"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/authentication_code_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />
+          	                  
+              	
+      	<Button
+	android:id="@+id/sign_up"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Sign Up"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+            	    android:layout_marginBottom="5dp"          
+        		/>
+      	    <include layout="@layout/list_divider" />
+          	                  
+              <TextView
+		android:id="@+id/sign_in_info"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+				android:text="If you are already signed up and have an account created either here or on our web site use your username and password to sign in" 
+				android:gravity="left|center" 
+		style="@style/label_text"
+		        		    android:layout_gravity="center"       
+		/> 	
+         </LinearLayout>
+		
+			</ScrollView>
+			    				    		 <RelativeLayout
+    android:id="@+id/help_layout_another"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+>   
+ <WebView  
+    android:id="@+id/webview_another"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    android:background="@drawable/help_background"
+/>
+
+ <ImageButton
+    	 android:id="@+id/close_another"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:background="#00000000"
+        android:src="@drawable/fileclose"
+         android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+	 			   			  	 		        </FrameLayout>
+    </LinearLayout> 
+
+    
+</FrameLayout>

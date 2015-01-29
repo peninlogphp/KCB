@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/insurance_buy_cover_heritage_medical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >     		       
+        	      	    <LinearLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal" 
+  android:layout_gravity="center"
+ 		   				>
+     <Button  android:id="@+id/medical_back_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+                          android:text=""
+                                    style="@style/song_button_text"
+                               android:background="#00000000"
+       		    android:gravity="left|center"
+       		           		        android:drawableLeft="@drawable/back_btn"
+  android:layout_gravity="center"
+             		               		       android:layout_marginLeft="2dp"              		    
+          android:layout_weight="0"
+        />
+            <TextView  
+		android:layout_width="214dp"
+		android:layout_height="36dp"
+        android:text="Medical Product"
+		android:gravity="left|center" 
+		style="@style/small_title_text"
+           android:layout_marginRight="0dp"              		    
+             android:layout_marginLeft="0dp"              		    
+           android:layout_weight="1"
+           android:padding="1dp"
+          
+ 		/>
+         
+                	<Button
+	android:id="@+id/medical_more"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:text="More..."
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+             		               		       android:layout_marginRight="2dp" 
+        	             		               		       android:layout_marginLeft="10dp"              		    
+                  android:layout_weight="0"
+        		/>		  
+        
+            
+         </LinearLayout>
+              		
+    
+            <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Cover Options"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/medical_cover_options_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+          </LinearLayout>
+                                   <include layout="@layout/list_divider" />  
+                                   
+                                   
+                                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+   		   				android:layout_marginTop="2dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Beneficiary's Mobile No."
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/medical_beneficiary_mobile_no_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                       <include layout="@layout/list_divider" />
+      <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Beneficiary's Full Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/medical_beneficiary_name_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                               <include layout="@layout/list_divider" />   
+          <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Beneficiary's ID No."
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/medical_beneficiary_id_no_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />  
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Allow Direct Debit"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <CheckBox android:id="@+id/medical_allow_direct_debit"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+        />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />
+ 	                  
+               	
+      	<Button
+	android:id="@+id/buy_cover_heritage_medical_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Buy Now"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+            
+         </LinearLayout>
+		

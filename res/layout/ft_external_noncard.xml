@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+			   <LinearLayout  android:id="@+id/funds_transfer_external"
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+ android:orientation="vertical"            
+ >
+       <include layout="@layout/ft_external_saved_title_bar_noncard" />
+                                        <include layout="@layout/list_divider" />
+       <include layout="@layout/ft_external_saved_noncard" />
+                                       		      	   			  	 		        
+				           <include layout="@layout/ft_external_destination_title_bar_noncard" />
+				                                             <include layout="@layout/list_divider" />
+				           <include layout="@layout/ft_external_destination_noncard" />
+				           
+			    		
+ 			   			    				    		 
+        </LinearLayout> 
+ 			   

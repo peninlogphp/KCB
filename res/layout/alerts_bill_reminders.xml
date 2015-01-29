@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/alerts_bill_reminders"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+                   
+        <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Bill name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+ <EditText 
+        android:id="@+id/bill_name_field"  
+        android:layout_width="150dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                       <include layout="@layout/list_divider" />
+                                       	       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+  <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Date"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+     android:id="@+id/bill_reminder_date_field"  
+        android:layout_width="114dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+       <Button
+    	 android:id="@+id/bill_reminder_date_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+                          android:text=""
+                                    style="@style/song_button_text"
+                               android:background="#00000000"
+       		    android:gravity="left|center"
+       		           		        android:drawableTop="@drawable/calendar"
+        		    android:layout_gravity="center"       
+	        />
+          </LinearLayout>
+
+                                 <include layout="@layout/list_divider" /> 
+  	       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+  <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Time"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+     android:id="@+id/bill_reminder_time_field"  
+        android:layout_width="114dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+       <Button
+    	 android:id="@+id/bill_reminder_time_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+                          android:text=""
+                                    style="@style/song_button_text"
+                               android:background="#00000000"
+       		    android:gravity="left|center"
+       		           		        android:drawableTop="@drawable/clock"
+        		    android:layout_gravity="center"       
+	        />
+          </LinearLayout>
+
+                                 <include layout="@layout/list_divider" />  
+   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Repetition"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ 
+<Spinner 
+        android:id="@+id/repetition_spinner"
+        android:layout_width="150dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+            android:textSize="16dp"
+              android:background="@drawable/slim_spinner_normal"       
+    />
+
+          </LinearLayout>
+          
+      		                                          <include layout="@layout/list_divider" />     
+       	                      	
+      	<Button
+	android:id="@+id/bill_reminder_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Save"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+                <include layout="@layout/list_divider" />
+      	
+         </LinearLayout>
+		

@@ -1,0 +1,336 @@
+<class-diagram version="1.0.4" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.BrowseSongs.MyAdapter" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/BrowseSongs.java" binary="false">    
+    <position x="875" y="142" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.BrowseSongs" project="LipukaAndroid" 
+    file="/LipukaAndroid/src/lipuka/android/BrowseSongs.java" binary="false">    
+    <position x="879" y="-406" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.Home" project="LipukaAndroid" 
+    file="/LipukaAndroid/src/lipuka/android/Home.java" binary="false">    
+    <position x="142" y="-590" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.InfoListActivity" project="LipukaAndroid" 
+    file="/LipukaAndroid/src/lipuka/android/InfoListActivity.java" binary="false">    
+    <position x="147" y="-182" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="11" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.Main" project="LipukaAndroid" 
+    file="/LipukaAndroid/src/lipuka/android/Main.java" binary="false">    
+    <position x="129" y="207" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="12" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.MusicActivity" project="LipukaAndroid" 
+    file="/LipukaAndroid/src/lipuka/android/MusicActivity.java" binary="false">    
+    <position x="908" y="715" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="14" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.ActivationService" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/ActivationService.java" binary="false">    
+    <position x="99" y="577" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="15" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.DbHelper" project="LipukaAndroid" 
+    file="/LipukaAndroid/src/lipuka/android/model/DbHelper.java" binary="false">    
+    <position x="1437" y="492" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="16" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.DownloadService" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/DownloadService.java" binary="false">    
+    <position x="115" y="908" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="17" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.LipukaActionListener" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/LipukaActionListener.java" binary="false">    
+    <position x="124" y="1176" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="18" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.LipukaDefaultActivity" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/LipukaDefaultActivity.java" binary="false">    
+    <position x="145" y="1363" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="20" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.LocalActivityHandler" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/LocalActivityHandler.java" binary="false">    
+    <position x="956" y="1367" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="24" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.ServiceXMLParser" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/ServiceXMLParser.java" binary="false">    
+    <position x="477" y="1586" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="26" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.database.AsyncDatabaseHandler" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/database/AsyncDatabaseHandler.java" 
+    binary="false">    
+    <position x="1140" y="223" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="27" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.database.AsyncDatabaseRead" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/database/AsyncDatabaseRead.java" 
+    binary="false">    
+    <position x="1178" y="550" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="28" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.database.DatabaseReadTask" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/database/DatabaseReadTask.java" binary="false">    
+    <position x="1269" y="-626" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="29" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.database.DatabaseWriteThread" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/database/DatabaseWriteThread.java" 
+    binary="false">    
+    <position x="1241" y="1127" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="30" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.model.database.DatabaseWriteTask" 
+    project="LipukaAndroid" file="/LipukaAndroid/src/lipuka/android/model/database/DatabaseWriteTask.java" 
+    binary="false">    
+    <position x="1368" y="-226" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="31" corner="BOTTOM_RIGHT" language="java" name="lipuka.android.LipukaApplication" project="LipukaAndroid" 
+    file="/LipukaAndroid/src/lipuka/android/LipukaApplication.java" binary="false">    
+    <position x="507" y="316" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association>    
+    <end type="SOURCE" nodeId="7" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="14" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="28" navigable="false">      
+      <attribute name="asyncDatabaseHandler"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="8" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="31" navigable="false">      
+      <attribute name="mainActivity"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="31" navigable="false">      
+      <attribute name="dbHelper"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="16" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="31" navigable="false">      
+      <attribute name="asyncDatabaseRead"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="20" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="17" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="31" navigable="false">      
+      <attribute name="serviceXMLParser"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="20" navigable="false">      
+      <attribute name="activity"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="30" navigable="false">      
+      <attribute name="asyncDatabaseHandler"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting>    
+    <end type="SOURCE" nodeId="6"/>    
+    <end type="TARGET" nodeId="4"/>  
+  </nesting>  
+  <association>    
+    <end type="SOURCE" nodeId="31" navigable="false">      
+      <attribute name="databaseWriteThread"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="6" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="11" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="12" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="29" navigable="false">      
+      <attribute name="dbHelper"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="24" navigable="false">      
+      <attribute name="lipukaApplication"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="24" navigable="false">      
+      <attribute name="activity"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="31" navigable="false">      
+      <attribute name="lipukaActionListener"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

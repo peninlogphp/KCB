@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>			          
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/wu_send_money_new"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >     		       
+    <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="First Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/fname_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />
+  <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Last Name"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/lname_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />  
+              <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ 		     android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Destination Country"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+  <AutoCompleteTextView 
+        android:id="@+id/new_recipient_country_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+   
+          </LinearLayout>
+                                        <include layout="@layout/list_divider" />
+              <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ 		     android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="State"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+  <EditText 
+        android:id="@+id/new_recipient_state_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                        <include layout="@layout/list_divider" />
+        
+	              <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ 		     android:layout_marginTop="5dp"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="City"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+
+  <EditText 
+        android:id="@+id/new_recipient_city_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+          </LinearLayout>
+                                        <include layout="@layout/list_divider" />
+                                       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Gold Card No."
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/new_recipient_gold_card_no_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+              android:text="2236646474637377"
+        />
+      
+          </LinearLayout>
+          
+                                              <include layout="@layout/list_divider" />
+	                                       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+  android:visibility="gone"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Promotion Code"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/new_recipient_promotion_code_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+      
+          </LinearLayout>
+          
+                         <include layout="@layout/list_divider"   android:visibility="gone"
+                             />
+		                                       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Amount (KES)"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/new_recipient_amount_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+      
+          </LinearLayout>
+          
+                                              <include layout="@layout/list_divider" />
+<LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+		    android:layout_gravity="center"             
+         android:id="@+id/new_recipient_source_n_purpose_of_funds_layout"
+ >	<LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+             android:visibility="gone"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Source of Funds"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/new_recipient_source_of_funds_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" 
+                                         android:visibility="gone"
+                             />
+                         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+             android:visibility="gone"
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Purpose of Funds"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <Spinner 
+        android:id="@+id/new_recipient_purpose_of_funds_spinner"
+        android:layout_width="140dp" 
+        android:layout_height="42dp"  
+        android:layout_gravity="center"
+          android:background="@drawable/slim_spinner_normal"       
+    />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" 
+                                         android:visibility="gone"
+                             />	
+          </LinearLayout>	
+         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+		    android:layout_gravity="center"             
+         android:id="@+id/new_recipient_test_question_n_answer_layout"
+ >	<LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+  <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Test Question"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/new_recipient_test_question_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />
+                         <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+ <TextView
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+        android:text="Test Answer"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+ <EditText 
+        android:id="@+id/new_recipient_test_answer_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+        />
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider" />	
+          </LinearLayout>	
+                    
+       <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+ >
+       <TextView
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+        android:text="Save Beneficiary"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		/>
+     
+     <CheckBox android:id="@+id/save_beneficiary"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+                android:layout_marginRight="3dp"       
+        />
+ <EditText 
+        android:id="@+id/alias_field"  
+        android:layout_width="140dp" 
+        android:layout_height="wrap_content"  
+        		    android:layout_gravity="center"       
+               android:hint="Beneficiary Alias"
+        />
+          </LinearLayout>	
+          
+                       <include layout="@layout/list_divider" />  	
+                                                   <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+		    android:layout_gravity="center"             
+   android:visibility="gone"
+ >
+  <CheckBox android:id="@+id/new_recipient_accept_terms"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="" 
+        		android:gravity="center" 
+        style="@style/label_text"
+        android:layout_gravity="center"       
+        android:button="@drawable/check_box_selector"
+        />
+                                <LinearLayout 
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+		    android:layout_gravity="center"             
+ >
+ 
+ <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:text="I have read and agree with the"
+		android:gravity="left|center" 
+		style="@style/label_text"
+			android:padding="1dp" 
+		/>
+         <TextView
+		android:id="@+id/new_recipient_terms_link"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left|center" 
+		style="@style/label_text"
+		android:padding="1dp" 
+		/> 
+ 
+          </LinearLayout>	
+ 
+          </LinearLayout>	
+                         <include layout="@layout/list_divider"   android:visibility="gone"
+                             />          
+      	<Button
+	android:id="@+id/new_recipient_submit"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        		    android:layout_gravity="center"       
+        android:text="Send Now"
+        android:textStyle="normal"
+        android:background="@drawable/ecobank_button"
+        		style="@style/lipuka_button"
+        		/>
+            
+         </LinearLayout>
+		
